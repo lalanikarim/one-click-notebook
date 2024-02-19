@@ -14,3 +14,5 @@ function create_buttons() {
 	paperspace.append(paperspace_img)
 	element.append(paperspace)
 }
+
+create_buttons()
