@@ -34,6 +34,9 @@ const get_notebook_url = (request) => {
 	try{
 		let nb = new URL(url)
 		host = nb.host
+		if (host != 'github.com') {
+			debug = true
+		}
 		pathname = nb.pathname
 		repo = pathname.split('/',3).join('/')
 		path = pathname.substring(repo.length)
